@@ -72,16 +72,6 @@
                     <view key="view" contentMode="scaleToFill" id="HWO-n4-gNs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqD-l2-1lC">
-                                <rect key="frame" x="92" y="98" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="찰칵"/>
-                                <connections>
-                                    <action selector="capture:" destination="RaQ-4f-y6V" eventType="touchUpInside" id="xm2-d2-Hpr"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="d20-fB-f8U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>

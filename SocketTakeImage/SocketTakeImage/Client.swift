@@ -44,12 +44,6 @@ class Client: UIViewController {
         session.startRunning()
         
     }
-    
-    @IBAction func capture(_ sender: Any) {
-//        output.capturePhoto(with: .init(), delegate: self)
-        socket.eventListen()
-    }
-    
 }
 
 extension Client: ImageCaptureDelegate {

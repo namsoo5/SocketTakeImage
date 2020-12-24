@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SocketIO
 
 class ViewController: UIViewController, StreamDelegate {
     @IBOutlet weak var imageView: UIImageView!
