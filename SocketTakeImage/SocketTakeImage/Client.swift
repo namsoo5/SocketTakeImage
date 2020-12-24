@@ -9,10 +9,6 @@ import UIKit
 import AVFoundation
 import SocketIO
 
-protocol ImageCaptureDelegate {
-    func didCapture(imageData: Data)
-}
-
 class Client: UIViewController {
     private let socket = SocketClient.shared
     private lazy var captureDevice = AVCaptureDevice.default(for: .video)
@@ -42,13 +38,6 @@ class Client: UIViewController {
         previewLayer.frame = view.frame
         view.layer.addSublayer(previewLayer)
         session.startRunning()
-        
-    }
-}
-
-extension Client: ImageCaptureDelegate {
-    func didCapture(imageData: Data) {
-        socket.sendImage(imageData)
     }
 }
 
